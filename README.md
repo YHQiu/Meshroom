@@ -131,7 +131,8 @@ PRE:构建AliceVision以用于Meshroom的一般步骤。请按照以下指南进
 5. 使用CMake生成构建配置。运行以下命令：
 
    ```shell
-   cmake ..
+   cmake -DALICEVISION_BUILD_DEPENDENCIES=ON -DCMAKE_INSTALL_PREFIX=$PWD/../install ../
+   
    ```
 
    这将根据你的系统和安装的依赖项生成构建配置。
@@ -139,7 +140,7 @@ PRE:构建AliceVision以用于Meshroom的一般步骤。请按照以下指南进
 6. 编译AliceVision。运行以下命令：
 
    ```shell
-   make
+   make -j10
    ```
 
    这将编译AliceVision的源代码并生成可执行文件和库文件。
