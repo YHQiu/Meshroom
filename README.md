@@ -104,6 +104,57 @@ pip install -r requirements.txt
 
 You need to have [AliceVision](https://github.com/alicevision/AliceVision) installation in your PATH (and LD_LIBRARY_PATH on Linux/macOS).
 
+```bash
+PRE:构建AliceVision以用于Meshroom的一般步骤。请按照以下指南进行操作：
+
+1. 首先，确保你已经安装了必要的构建工具和依赖项。这些包括CMake、GCC、Git和一些图像处理库（例如OpenCV和Boost）等。你可以使用包管理器（如apt、yum或brew）来安装这些依赖项。
+
+2. 下载AliceVision的源代码。你可以通过使用Git命令克隆AliceVision的存储库来完成此操作。在终端中执行以下命令：
+
+   ```shell
+   git clone https://github.com/alicevision/AliceVision.git
+   ```
+
+3. 进入AliceVision的源代码目录：
+
+   ```shell
+   cd AliceVision
+   ```
+
+4. 创建一个用于构建的目录（通常称为`build`目录）：
+
+   ```shell
+   mkdir build
+   cd build
+   ```
+
+5. 使用CMake生成构建配置。运行以下命令：
+
+   ```shell
+   cmake ..
+   ```
+
+   这将根据你的系统和安装的依赖项生成构建配置。
+
+6. 编译AliceVision。运行以下命令：
+
+   ```shell
+   make
+   ```
+
+   这将编译AliceVision的源代码并生成可执行文件和库文件。
+
+7. 安装AliceVision。运行以下命令：
+
+   ```shell
+   sudo make install
+   ```
+
+   这将安装AliceVision到系统中，使其可供其他应用程序（如Meshroom）使用。
+
+完成上述步骤后，你就成功构建了AliceVision，并可以将其用于Meshroom。请注意，构建AliceVision可能需要一些时间，具体取决于你的系统性能和网络连接速度。如果在构建过程中遇到任何错误，请检查错误信息并尝试解决它们（通常需要安装缺少的依赖项或解决配置问题）。
+```
+
  - __Launch the User Interface__
 
 ```bash
