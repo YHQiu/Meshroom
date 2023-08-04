@@ -155,7 +155,7 @@ PRE:构建AliceVision以用于Meshroom的一般步骤。请按照以下指南进
 完成上述步骤后，你就成功构建了AliceVision，并可以将其用于Meshroom。请注意，构建AliceVision可能需要一些时间，具体取决于你的系统性能和网络连接速度。如果在构建过程中遇到任何错误，请检查错误信息并尝试解决它们（通常需要安装缺少的依赖项或解决配置问题）。
 ```
 
- - __Launch the User Interface__
+- __Launch the User Interface__
 
 ```bash
 # Windows
@@ -168,7 +168,7 @@ On Ubuntu, you may have conflicts between native drivers and mesa drivers. In th
 `LD_LIBRARY_PATH=/usr/lib/nvidia-340 PYTHONPATH=$PWD python meshroom/ui`
 You may need to adjust the folder `/usr/lib/nvidia-340` with the correct driver version.
 
- - __Launch a 3D reconstruction in command line__
+- __Launch a 3D reconstruction in command line__
 
 ```bash
 # Windows: set PYTHONPATH=%CD% &&
