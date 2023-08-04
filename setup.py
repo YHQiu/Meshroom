@@ -139,7 +139,8 @@ setup(
     setup_requires=[
         'cx_Freeze'
     ],
-    version=meshroom.__version__,
+    #version=meshroom.__version__,
+    version=1.0,
     options={"build_exe": build_exe_options},
     executables=executables,
 )
