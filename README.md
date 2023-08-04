@@ -180,9 +180,13 @@ python bin/meshroom_batch --input INPUT_IMAGES_FOLDER --output OUTPUT_FOLDER
 ## Start Meshroom without building AliceVision
 
 To use Meshroom (ui) without building AliceVision
-*   Download a [release](https://github.com/alicevision/meshroom/releases)
+````bash
+mkdir extensions
+cd extensions
+````
+*   Download a [release](https://github.com/alicevision/meshroom/releases) to extensions
 *   Checkout corresponding Meshroom (ui) version/tag to avoid versions incompatibilities
-*   `LD_LIBRARY_PATH=~/foo/Meshroom-2023.2.0/aliceVision/lib/ PATH=$PATH:~/foo/Meshroom-2023.2.0/aliceVision/bin/ PYTHONPATH=$PWD python3 meshroom/ui`
+*   `LD_LIBRARY_PATH=./extensions/Meshroom-2023.2.0/aliceVision/lib/ PATH=$PATH:./extensions/Meshroom-2023.2.0/aliceVision/bin/ python3 meshroom/ui`
 
 ## Start and Debug Meshroom in an IDE
 
