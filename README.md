@@ -185,6 +185,9 @@ mkdir extensions
 cd extensions
 ````
 *   Download a [release](https://github.com/alicevision/meshroom/releases) to extensions
+````bash
+ln -s Meshroom-2023.2.0-av3.1.0-centos7-cuda11.3.1/ Meshroom-2023.2.0
+````
 *   Checkout corresponding Meshroom (ui) version/tag to avoid versions incompatibilities
 *   `LD_LIBRARY_PATH=./extensions/Meshroom-2023.2.0/aliceVision/lib/ PATH=$PATH:./extensions/Meshroom-2023.2.0/aliceVision/bin/ python3 meshroom/ui`
 
